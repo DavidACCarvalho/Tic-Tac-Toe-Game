@@ -45,8 +45,6 @@ function winConfirm(str, salut) {
 }
 
 function clearInvalidEvent() {
-    console.log(box.length)
-    console.log(box)
     for(let i = 0; i < box.length ; i++) {
       box[i].removeEventListener('click', alertInvalid);
     }
@@ -78,7 +76,7 @@ function resetGame() {
 }
 
 function alertInvalid() {
-    return alert('Jogada Inválida');
+    return alert('Invalid Move');
 }
 
 function init() {
