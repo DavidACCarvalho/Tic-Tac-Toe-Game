@@ -26,7 +26,6 @@ function addHandler(event) {
 
 function winConfirm(str, salut) {
     // Check the 8 possible moves to win
-    console.log(str);
     if (str.includes('5') && ( str.includes('1') && str.includes('9') || str.includes('7') && str.includes('3') || str.includes('2') && str.includes('8') || str.includes('4') && str.includes('6'))) {
         alert(salut);
         resetGame();
@@ -50,12 +49,9 @@ function clearInvalidEvent() {
 
 function clearCLass() {
     for(let i = 0; i < box.length ; i++) {
-        if(box[i].classList.contains('player1')){
-            box[i].classList.remove('player1');
-        }else {
-            box[i].classList.remove('player2');
-        }
-   }
+        box[i].classList.remove('player1');
+        box[i].classList.remove('player2');
+    }
 }
 
 function clearArrays() {
@@ -85,3 +81,5 @@ function init() {
 }
 
 init();
+     
+     
