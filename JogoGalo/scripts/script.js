@@ -5,7 +5,6 @@ const player2 = [];
 let counter = 0;
 
 function addHandler(event) {
-    
     counter++
     event.target.removeEventListener('click', addHandler);
     event.target.addEventListener('click', alertInvalid);
@@ -22,7 +21,6 @@ function addHandler(event) {
         let newStr2 = player2.join('');
         let win = 'Player 2 win';
         winConfirm(newStr2, win);
-
     }
 }
 
@@ -59,6 +57,7 @@ function clearCLass() {
         }
    }
 }
+
 function clearArrays() {
     let i = 0;
     while (i < player1.length || i < player2.length) {
